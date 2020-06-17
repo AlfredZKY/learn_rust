@@ -148,10 +148,10 @@ fn use_city() {
 }
 
 fn use_type() {
-    let logical = true;
-    let a_float = 1.0;
+    let _logical = true;
+    let _a_float = 1.0;
     let an_integer = 5i32;
-    let default_float = 3.0;
+    let _default_float = 3.0;
     let default_integer = 7;
     println!(
         "a_float + default_integer = {}",
@@ -161,7 +161,6 @@ fn use_type() {
 
     // #[deny(arithmetic_overflow)]
     // println!("1 - 2 = {}",1u32 - 2); 类型不一致，不能操作
-
     let mut inferred_type = 12;
     inferred_type = 4294967296i64;
     let mut mutable = 12;
@@ -170,7 +169,7 @@ fn use_type() {
     // mutable = true; 变量类型不能改变
 
     // shadow 掩盖前面的变量
-    let mutable = true;
+    let _mutable = true;
 
     // 短路求值的布尔类型
     println!("true AND false is {}", true && false);
