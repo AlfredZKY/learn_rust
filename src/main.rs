@@ -261,4 +261,8 @@ fn main() {
     use_type();
     use_list();
     use_slice();
+    let padded_piece_size = 64u32;
+    pub const NODE_SIZE: usize = 32;
+    let parts = (padded_piece_size as f64 / NODE_SIZE as f64).ceil() as usize;
+    println!("parts is {}",parts);
 }
