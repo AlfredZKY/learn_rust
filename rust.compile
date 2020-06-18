@@ -6,5 +6,3 @@
 !#[attribute属性描述]
 #![allow(dead_code)]  // 该属性用于隐藏对未使用代码的警告
 #![allow(overflowing_literals)] // 不显示类型转换产生的溢出警告。
-
-proof.rs:generate_tree_c 368 调用在697
