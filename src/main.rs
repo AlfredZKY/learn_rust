@@ -2,6 +2,14 @@ pub mod mystructs;
 pub mod mystd;
 pub mod tuplelist;
 pub mod judgementtype;
+pub mod fileop;
+pub mod control;
+pub mod matchs;
+pub mod refpointer;
+
+extern crate time;
+use time::*;
+
 
 fn main() {
     println!("Hello, world!");
@@ -38,4 +46,18 @@ fn main() {
     judgementtype::use_try_from_into();
     judgementtype::use_tostring();
     judgementtype::use_strparse();
+    let start = time::now();
+    // fileop::init();
+    // fileop::sort_by_self(0, 0);
+    let end = time::now();
+    println!("duration: {:?}",end-start);
+
+    control::use_look_label();
+    control::loop_return();
+    control::use_while();
+    control::use_for1();
+    control::use_for2();
+    matchs::use_match();
+    matchs::use_match_tuple();
+    refpointer::use_ref_pointer();
 }
